@@ -1,13 +1,9 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" class="dark">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>AlamAlRoumCity.com | أصل رقمي — SnapTheName</title>
-
-  <meta name="description" content="AlamAlRoumCity.com — أصل رقمي لتوحيد الإحالة الرقمية حول الاسم. عرض مستقل غير تابع لأي جهة." />
-  <meta name="robots" content="index,follow" />
-  <meta name="theme-color" content="#0A1128" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>محفظة Alam Al-Roum | SnapTheName</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
@@ -15,424 +11,349 @@
 
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: { sans: ['Tajawal', 'sans-serif'] },
-          colors: {
-            gold: '#D4AF37',
-            darkBlue: '#0A1128',
-            premiumGray: '#111827',
-          },
-          boxShadow: {
-            luxe: '0 18px 50px rgba(0,0,0,.45)',
-            luxe2: '0 10px 25px rgba(0,0,0,.35)',
-          }
+          colors: { gold:'#D4AF37', darkBlue:'#050A15', premiumGray:'#111827', accent:'#1E293B' },
+          boxShadow: { luxe:'0 18px 50px rgba(0,0,0,.45)' }
         }
       }
     }
   </script>
 
   <style>
-    body{ font-family: Tajawal, sans-serif; }
-    .hero-bg{
+    body { font-family: 'Tajawal', sans-serif; scroll-behavior: smooth; }
+    .hero-bg {
       background-image:
-        radial-gradient(900px 450px at 15% -10%, rgba(212,175,55,.22), transparent 60%),
-        linear-gradient(rgba(10, 17, 40, 0.86), rgba(10, 17, 40, 0.76)),
+        radial-gradient(900px 450px at 15% -10%, rgba(212,175,55,.18), transparent 60%),
+        linear-gradient(rgba(5,10,21,0.90), rgba(5,10,21,0.82)),
         url('https://i.ibb.co/tpTkLjCq/alamalroumcity-com.jpg');
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
+      background-size: cover; background-position: center; background-attachment: fixed;
+    }
+    .domain-card {
+      background: linear-gradient(145deg, #111827, #1E293B);
+      border: 1px solid rgba(212, 175, 55, 0.15);
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+    }
+    .domain-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(212,175,55,0.7);
+      box-shadow: 0 10px 30px -10px rgba(212,175,55,0.28);
     }
     .glass{
       background: rgba(255,255,255,.06);
       backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,.12);
-      box-shadow: 0 18px 50px rgba(0,0,0,.35);
+      border: 1px solid rgba(255,255,255,.10);
     }
-    .ring-gold{
-      box-shadow:
-        0 0 0 1px rgba(212,175,55,.18) inset,
-        0 18px 50px rgba(0,0,0,.35);
-    }
-    .form-input{
-      width:100%;
-      padding:.85rem 1rem;
-      background: rgba(255,255,255,.06);
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center; gap:.55rem;
+      padding:.75rem 1rem; border-radius:999px;
       border: 1px solid rgba(255,255,255,.14);
-      border-radius: .85rem;
-      color: rgba(255,255,255,.92);
-      transition: all .25s ease;
+      background: rgba(255,255,255,.06);
+      transition:.2s ease;
+    }
+    .btn:hover { background: rgba(255,255,255,.10); transform: translateY(-1px); }
+    .btn-gold{
+      border-color: rgba(212,175,55,.40);
+      background: rgba(212,175,55,.16);
+      color: #F7F2E3;
+      font-weight: 800;
+    }
+    .btn-gold:hover{ background: rgba(212,175,55,.22); }
+    .form-input {
+      width: 100%;
+      padding: 0.85rem 1.1rem;
+      background-color: #050A15;
+      border: 1px solid #374151;
+      border-radius: 0.75rem;
+      color: #f3f4f6;
+      transition: all 0.25s;
       outline: none;
     }
-    .form-input:focus{
-      border-color: rgba(212,175,55,.55);
-      box-shadow: 0 0 0 4px rgba(212,175,55,.18);
+    .form-input:focus {
+      border-color: #D4AF37;
+      box-shadow: 0 0 0 3px rgba(212,175,55,0.18);
     }
-
-    /* small button style */
-    .contact-btn{
-      display:inline-flex;
-      align-items:center;
-      gap:.55rem;
-      padding:.7rem 1rem;
-      border-radius: 1rem;
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      transition: .2s ease;
-      box-shadow: 0 10px 25px rgba(0,0,0,.25);
-    }
-    .contact-btn:hover{ background: rgba(255,255,255,.10); transform: translateY(-1px); }
-    .contact-btn.gold{
-      border-color: rgba(212,175,55,.38);
-      background: rgba(212,175,55,.14);
-    }
-    .contact-btn.gold:hover{ background: rgba(212,175,55,.18); }
   </style>
 </head>
 
 <body class="bg-darkBlue text-gray-200 antialiased selection:bg-gold selection:text-darkBlue">
 
-  <!-- ===== CONFIG (easy edit) ===== -->
+  <!-- CONFIG -->
   <script>
-    window.STN = {
+    window.CONTACT = {
       phoneIntl: "+201000001802",
       phoneDigits: "201000001802",
       email: "hussein.lashin@snapthename.com"
     };
   </script>
 
-  <!-- Topbar -->
-  <header class="fixed top-0 w-full z-50 border-b border-white/10 bg-darkBlue/70 backdrop-blur-md">
-    <div class="container mx-auto px-6 py-4 flex items-center justify-between gap-4">
-      <div class="flex items-center gap-4">
-        <img
-          src="https://i.ibb.co/BHhQ5LHz/SNAP-THE-NAME.png"
-          alt="SnapTheName Logo"
-          class="h-14 w-14 sm:h-16 sm:w-16 object-contain rounded-xl ring-gold"
-        />
-        <div class="leading-tight" dir="ltr">
-          <div class="text-2xl sm:text-3xl font-black tracking-wide text-white">
-            Snap <span class="text-gold">The Name</span>
-          </div>
-          <div class="text-xs text-white/60 tracking-wide">
-            B2B domains • Use-case first
-          </div>
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 border-b border-gray-800/80 bg-darkBlue/85 backdrop-blur-md">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center gap-4">
+      <div class="flex items-center gap-5">
+        <img src="https://i.ibb.co/BHhQ5LHz/SNAP-THE-NAME.png" alt="SnapTheName"
+             class="h-20 md:h-24 object-contain drop-shadow-[0_0_15px_rgba(212,175,55,0.25)]">
+        <div class="hidden sm:block">
+          <span class="text-3xl font-black text-white tracking-widest uppercase font-sans block leading-none" dir="ltr">
+            SNAP <span class="text-gold">THE NAME</span>
+          </span>
+          <span class="text-xs text-gold/80 tracking-widest font-sans uppercase mt-1 block" dir="ltr">
+            Premium B2B Domains
+          </span>
         </div>
       </div>
 
-      <!-- Desktop: 3 contact buttons -->
-      <div class="hidden md:flex items-center gap-3">
-        <a id="callBtnTop" class="contact-btn" href="#">
-          <i class="fa-solid fa-phone text-gold"></i>
-          <span>اتصال</span>
-          <span class="text-white/55 text-sm" dir="ltr" id="phoneTop"></span>
-        </a>
-
-        <a id="waBtnTop" class="contact-btn gold" href="#" target="_blank" rel="noopener">
-          <i class="fa-brands fa-whatsapp text-gold"></i>
-          <span>واتساب</span>
-        </a>
-
-        <a id="mailBtnTop" class="contact-btn" href="#" dir="ltr">
-          <i class="fa-solid fa-envelope text-gold"></i>
-          <span>إيميل</span>
-        </a>
+      <!-- 3 buttons only -->
+      <div class="hidden lg:flex gap-3 items-center">
+        <a id="btnCallTop" class="btn" href="#"><i class="fas fa-phone text-gold"></i> اتصال</a>
+        <a id="btnWaTop" class="btn btn-gold" href="#" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
+        <a id="btnMailTop" class="btn" href="#" dir="ltr"><i class="fas fa-envelope text-gold"></i> Email</a>
       </div>
 
-      <!-- Mobile: icons row (still 3 buttons) -->
-      <div class="md:hidden flex items-center gap-2">
-        <a id="callBtnTopM" class="contact-btn px-3 py-2" href="#" title="Call">
-          <i class="fa-solid fa-phone text-gold"></i>
-        </a>
-        <a id="waBtnTopM" class="contact-btn gold px-3 py-2" href="#" target="_blank" rel="noopener" title="WhatsApp">
-          <i class="fa-brands fa-whatsapp text-gold"></i>
-        </a>
-        <a id="mailBtnTopM" class="contact-btn px-3 py-2" href="#" title="Email">
-          <i class="fa-solid fa-envelope text-gold"></i>
-        </a>
+      <!-- mobile icons -->
+      <div class="lg:hidden flex gap-2 items-center">
+        <a id="btnCallTopM" class="btn px-3" href="#" title="Call"><i class="fas fa-phone text-gold"></i></a>
+        <a id="btnWaTopM" class="btn btn-gold px-3" href="#" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a id="btnMailTopM" class="btn px-3" href="#" title="Email"><i class="fas fa-envelope text-gold"></i></a>
       </div>
     </div>
   </header>
 
   <!-- Hero -->
-  <section class="hero-bg min-h-screen flex items-center pt-24">
-    <div class="container mx-auto px-6 py-16 text-center">
+  <section class="hero-bg min-h-screen flex items-center pt-28 pb-12">
+    <div class="container mx-auto px-6 text-center">
 
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-black/20 text-gold font-bold tracking-widest text-xs sm:text-sm uppercase">
-        <i class="fa-solid fa-shield-halved"></i>
-        عرض مستقل — Partnership / Acquisition
+      <div class="inline-block mb-6 px-6 py-2 border border-gold/40 bg-gold/10 backdrop-blur-sm rounded-full">
+        <span class="text-gold font-bold tracking-wider text-sm md:text-base uppercase flex items-center gap-2">
+          <i class="fas fa-layer-group text-xs"></i> Portfolio Bundle (4 Strategic Domains)
+        </span>
       </div>
 
-      <h1 class="mt-6 text-5xl md:text-7xl font-extrabold text-white leading-tight" dir="ltr">
-        alamalroumcity<span class="text-gold">.com</span>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+        محفظة نطاقات مخصصة لاسم <br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold to-yellow-200">Alam Al-Roum</span>
       </h1>
 
-      <p class="mt-6 text-lg md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed">
-        أصل رقمي لتوحيد الإحالة حول الاسم — بوابة واحدة تقلّل التشتيت وتحوّل الاهتمام لاستفسارات منظمة.
+      <p class="text-lg md:text-2xl text-gray-300 mb-10 max-w-4xl mx-auto leading-relaxed">
+        4 نطاقات تغطّي المدينة/الساحل/الفنادق/العقار — لتقليل تشتيت الاسم وتحويل الاهتمام لتواصل مباشر منظم.
       </p>
 
-      <!-- Two reassurance lines -->
-      <div class="mt-8 max-w-4xl mx-auto glass rounded-2xl p-5 text-right">
+      <!-- Transfer reassurance (2 lines) -->
+      <div class="max-w-5xl mx-auto glass rounded-2xl p-5 mb-10 text-right">
         <div class="flex items-start gap-3">
-          <i class="fa-solid fa-lock text-gold mt-1"></i>
-          <div class="text-white/80 leading-relaxed">
-            <div class="font-bold text-white">طمأنة النقل:</div>
-            <div>نقل الملكية يتم مباشرة عبر شركة تسجيل النطاقات (Registrar) إلى حساب المشتري — بخطوات واضحة وموثّقة.</div>
-            <div>لا يوجد مشاركة لكلمات مرور: التحويل يتم كـ Account Transfer/Push رسمي، ثم تسليم كامل بعد تأكيد انتقال الملكية.</div>
+          <i class="fas fa-lock text-gold mt-1"></i>
+          <div class="text-gray-200/90 leading-relaxed">
+            <div>نقل الملكية يتم عبر شركة تسجيل النطاقات (Registrar) باستخدام Auth-Code/Transfer — إجراء قياسي وموثّق.</div>
+            <div>بدون مشاركة كلمات مرور: بعد التأكيد يصبح النطاق تحت سيطرة المشتري بالكامل.</div>
           </div>
         </div>
       </div>
 
-      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="#request" class="px-8 py-4 rounded-2xl bg-gold text-darkBlue font-black text-lg hover:bg-yellow-500 transition shadow-luxe">
-          <i class="fa-solid fa-file-circle-check ml-2"></i> اطلب الملف (PDF)
-        </a>
-        <a href="#request" class="px-8 py-4 rounded-2xl border border-white/15 bg-white/5 hover:bg-white/10 transition shadow-luxe2">
-          <i class="fa-solid fa-paper-plane ml-2 text-gold"></i> ابدأ التواصل
-        </a>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-10">
+        <div class="domain-card p-6 rounded-xl text-center">
+          <h3 class="text-xl font-bold text-white mb-1" dir="ltr">alamalroumcity<span class="text-gold">.com</span></h3>
+          <p class="text-xs text-gray-400">الاسم المظلة (routing) للمدينة/الوجهة</p>
+        </div>
+
+        <div class="domain-card p-6 rounded-xl text-center border-gold/35 shadow-[0_0_15px_rgba(212,175,55,0.14)] relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-gold text-darkBlue text-[10px] font-bold px-2 py-1 rounded-bl-lg">High Intent</div>
+          <h3 class="text-xl font-bold text-white mb-1" dir="ltr">alamalroumrealestate<span class="text-gold">.com</span></h3>
+          <p class="text-xs text-gray-400">بوابة استفسارات عقارية/وسطاء/مزودين</p>
+        </div>
+
+        <div class="domain-card p-6 rounded-xl text-center">
+          <h3 class="text-xl font-bold text-white mb-1" dir="ltr">alamalroumhotels<span class="text-gold">.com</span></h3>
+          <p class="text-xs text-gray-400">للضيافة: حجوزات/شراكات/سلاسل</p>
+        </div>
+
+        <div class="domain-card p-6 rounded-xl text-center">
+          <h3 class="text-xl font-bold text-white mb-1" dir="ltr">alamalroumcoast<span class="text-gold">.com</span></h3>
+          <p class="text-xs text-gray-400">للوجهة الساحلية: محتوى/PR/دليل</p>
+        </div>
       </div>
 
-      <p class="mt-8 text-white/60 text-sm max-w-4xl mx-auto leading-relaxed">
-        تنبيه: هذه صفحة عرض مستقلة وغير رسمية وغير تابعة لأي جهة حكومية أو مطوّر.
+      <!-- 3 buttons -->
+      <div class="flex flex-col sm:flex-row justify-center gap-3">
+        <a id="btnCallHero" class="btn" href="#"><i class="fas fa-phone text-gold"></i> اتصال</a>
+        <a id="btnWaHero" class="btn btn-gold" href="#" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
+        <a id="btnMailHero" class="btn" href="#" dir="ltr"><i class="fas fa-envelope text-gold"></i> Email</a>
+      </div>
+
+      <p class="text-xs text-gray-400 mt-6">
+        تنبيه: صفحة عرض مستقلة وغير رسمية وغير تابعة لأي جهة.
       </p>
     </div>
   </section>
 
-  <!-- Minimal stats -->
-  <section class="py-14 bg-premiumGray border-y border-white/10">
+  <!-- Numbers -->
+  <section class="py-20 bg-premiumGray border-y border-gray-800">
     <div class="container mx-auto px-6">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-        <div class="rounded-2xl border border-white/12 bg-white/5 p-7 shadow-luxe2">
-          <i class="fa-solid fa-money-bill-wave text-3xl text-gold mb-3"></i>
-          <div class="text-4xl font-black text-white" dir="ltr">$29.7B</div>
-          <div class="text-white/70 mt-2">قيمة مُعلنة/مُبلّغ عنها (Reported)</div>
-          <div class="text-xs text-white/45 mt-3">يرجى التحقق من أحدث إعلان رسمي</div>
+      <div class="text-center mb-14">
+        <h2 class="text-3xl md:text-4xl text-white font-bold mb-4">لغة الأرقام (Announced / Reported)</h2>
+        <p class="text-gray-400 text-lg">مختصر أرقام متداولة في تقارير عامة — للتوثيق التفصيلي داخل PDF.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-8 bg-darkBlue rounded-2xl border border-gray-800 shadow-2xl">
+          <div class="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-chart-bar text-2xl text-gold"></i>
+          </div>
+          <h3 class="text-4xl font-black text-white mb-2" dir="ltr">$29.7B</h3>
+          <p class="text-lg text-gray-300 font-bold mb-2">إجمالي الاستثمار المُعلن</p>
+          <p class="text-sm text-gray-500 leading-relaxed">مذكور في تقارير Reuters وبيانات حكومية منشورة.</p>
         </div>
 
-        <div class="rounded-2xl border border-white/12 bg-white/5 p-7 shadow-luxe2">
-          <i class="fa-solid fa-map-location-dot text-3xl text-gold mb-3"></i>
-          <div class="text-4xl font-black text-white">4,900 فدان</div>
-          <div class="text-white/70 mt-2">مساحة مذكورة في تقارير عامة</div>
-          <div class="text-xs text-white/45 mt-3">قد تتغير حسب المخطط الرسمي</div>
+        <div class="p-8 bg-darkBlue rounded-2xl border border-gray-800 shadow-2xl">
+          <div class="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-vector-square text-2xl text-gold"></i>
+          </div>
+          <h3 class="text-4xl font-black text-white mb-2">≈ 1,985 ha</h3>
+          <p class="text-lg text-gray-300 font-bold mb-2">≈ 4,900 acres (تقريبًا)</p>
+          <p class="text-sm text-gray-500 leading-relaxed">مساحة مذكورة في تقارير عامة عن المشروع.</p>
         </div>
 
-        <div class="rounded-2xl border border-white/12 bg-white/5 p-7 shadow-luxe2">
-          <i class="fa-solid fa-magnifying-glass-chart text-3xl text-gold mb-3"></i>
-          <div class="text-4xl font-black text-white" dir="ltr">Exact-Match</div>
-          <div class="text-white/70 mt-2">تقليل تشتيت الاسم + دعم البحث</div>
-          <div class="text-xs text-white/45 mt-3">قيمة تشغيلية (Routing + SEO/SEM)</div>
+        <div class="p-8 bg-darkBlue rounded-2xl border border-gray-800 shadow-2xl">
+          <div class="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-magnifying-glass-chart text-2xl text-gold"></i>
+          </div>
+          <h3 class="text-4xl font-black text-white mb-2" dir="ltr">Exact-Match</h3>
+          <p class="text-lg text-gray-300 font-bold mb-2">وضوح إحالة + تقليل تشتيت الاسم</p>
+          <p class="text-sm text-gray-500 leading-relaxed">يدعم قابلية الفهم والفهرسة وفق إرشادات Google العامة.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Request form -->
-  <section id="request" class="py-20 bg-darkBlue">
-    <div class="container mx-auto px-6">
-      <div class="max-w-4xl mx-auto rounded-3xl overflow-hidden border border-white/10 shadow-luxe bg-white/5">
-        <div class="p-10">
+  <!-- Simple form: opens WhatsApp/Email (no storage) -->
+  <section id="lead-form" class="py-22 bg-darkBlue border-t border-gray-800">
+    <div class="container mx-auto px-6 py-16">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-10">
+          <h2 class="text-3xl md:text-5xl font-black text-white mb-3">اطلب الملف التعريفي (PDF)</h2>
+          <p class="text-lg text-gray-400">املأ البيانات لتجهيز رسالة إرسال سريعة عبر واتساب أو البريد.</p>
+        </div>
 
-          <h2 class="text-2xl md:text-3xl font-black text-white mb-3">اطلب الملف التعريفي (PDF)</h2>
-          <p class="text-white/65 mb-8 leading-relaxed">
-            اكتب بيانات التواصل لإرسال الملف وترتيب خطوة متابعة سريعة.
-          </p>
-
-          <!-- Success box -->
-          <div id="successBox" class="hidden mb-8 rounded-2xl border border-gold/25 bg-gold/10 p-5">
-            <div class="font-black text-white mb-2">تم تجهيز طلبك ✅</div>
-            <div class="text-white/70 text-sm leading-relaxed mb-4">
-              اختر وسيلة التواصل الأنسب لإرسال الملف فورًا.
-            </div>
-            <div class="flex flex-col sm:flex-row gap-3">
-              <a id="callLink" class="px-6 py-3 rounded-2xl border border-white/15 bg-white/5 hover:bg-white/10 transition font-bold text-center">
-                <i class="fa-solid fa-phone ml-2 text-gold"></i> اتصال
-              </a>
-              <a id="waLink" class="px-6 py-3 rounded-2xl bg-gold text-darkBlue font-black text-center hover:bg-yellow-500 transition" target="_blank" rel="noopener">
-                <i class="fa-brands fa-whatsapp ml-2"></i> واتساب
-              </a>
-              <a id="mailLink" class="px-6 py-3 rounded-2xl border border-white/15 bg-white/5 hover:bg-white/10 transition font-bold text-center" dir="ltr">
-                <i class="fa-solid fa-envelope ml-2 text-gold"></i> Email
-              </a>
-            </div>
-          </div>
-
-          <form id="requestForm" class="space-y-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-premiumGray p-8 md:p-12 rounded-2xl border border-gray-700 shadow-2xl">
+          <form id="reqForm">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div>
-                <label class="block text-white/60 text-sm font-medium mb-2">الاسم الكامل *</label>
-                <input id="name" required class="form-input" placeholder="أدخل اسمك" />
+                <label class="block text-gray-300 text-sm font-bold mb-2">الاسم *</label>
+                <input id="nm" type="text" required class="form-input" placeholder="اسمك">
               </div>
               <div>
-                <label class="block text-white/60 text-sm font-medium mb-2">اسم الشركة / الجهة *</label>
-                <input id="company" required class="form-input" placeholder="اسم شركتك" />
+                <label class="block text-gray-300 text-sm font-bold mb-2">الشركة *</label>
+                <input id="co" type="text" required class="form-input" placeholder="اسم الشركة">
               </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div>
-                <label class="block text-white/60 text-sm font-medium mb-2">المنصب</label>
-                <input id="role" class="form-input" placeholder="BD / Marketing / Legal / Procurement…" dir="ltr" />
+                <label class="block text-gray-300 text-sm font-bold mb-2">Corporate Email *</label>
+                <input id="em" type="email" required class="form-input" placeholder="name@company.com" dir="ltr">
               </div>
               <div>
-                <label class="block text-white/60 text-sm font-medium mb-2">البريد الإلكتروني للعمل *</label>
-                <input id="email" type="email" required class="form-input text-right" placeholder="name@company.com" dir="ltr" />
+                <label class="block text-gray-300 text-sm font-bold mb-2">Mobile / WhatsApp *</label>
+                <input id="ph" type="tel" required class="form-input" placeholder="+20 100 000 0000" dir="ltr">
               </div>
             </div>
 
-            <div>
-              <label class="block text-white/60 text-sm font-medium mb-2">رقم الهاتف / واتساب *</label>
-              <input id="phone" type="tel" required class="form-input text-right" placeholder="+20 100 000 0000" dir="ltr" />
-            </div>
-
-            <div>
-              <label class="block text-white/60 text-sm font-medium mb-2">ملاحظة (اختياري)</label>
-              <textarea id="note" class="form-input" rows="3" placeholder="مثال: بوابة استفسارات/دليل موردين/صفحة إحالة…"></textarea>
-            </div>
-
-            <div class="flex flex-col sm:flex-row gap-3">
-              <button type="submit" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gold text-darkBlue font-black text-lg hover:bg-yellow-500 transition shadow-luxe flex items-center justify-center gap-2">
-                <span>إرسال الطلب</span>
-                <i class="fa-solid fa-paper-plane"></i>
+            <div class="flex flex-col md:flex-row gap-3">
+              <button type="submit" class="w-full md:w-1/2 bg-gradient-to-r from-gold to-yellow-600 text-darkBlue py-4 rounded-xl font-black text-lg hover:from-yellow-500 hover:to-yellow-400 transition duration-300 shadow-[0_0_20px_rgba(212,175,55,0.25)] flex justify-center items-center gap-3">
+                <i class="fab fa-whatsapp"></i>
+                <span>إرسال عبر واتساب</span>
               </button>
 
-              <button type="button" id="copyBtn" class="w-full sm:w-auto px-8 py-4 rounded-2xl border border-white/15 bg-white/5 hover:bg-white/10 transition shadow-luxe2 font-bold flex items-center justify-center gap-2">
-                <span>نسخ وسائل التواصل</span>
-                <i class="fa-regular fa-copy text-gold"></i>
+              <button type="button" id="sendMail" class="w-full md:w-1/2 border border-gold/35 bg-gold/10 text-gold py-4 rounded-xl font-black text-lg hover:bg-gold hover:text-darkBlue transition duration-300 flex justify-center items-center gap-3" dir="ltr">
+                <i class="fas fa-envelope"></i>
+                <span>Send Email</span>
               </button>
             </div>
 
-            <!-- Optional: 3 buttons visible even before submit -->
-            <div class="pt-4 border-t border-white/10 flex flex-col sm:flex-row gap-3">
-              <a id="callBtnForm" class="contact-btn w-full sm:w-auto justify-center" href="#">
-                <i class="fa-solid fa-phone text-gold"></i> اتصال
-              </a>
-              <a id="waBtnForm" class="contact-btn gold w-full sm:w-auto justify-center" href="#" target="_blank" rel="noopener">
-                <i class="fa-brands fa-whatsapp text-gold"></i> واتساب
-              </a>
-              <a id="mailBtnForm" class="contact-btn w-full sm:w-auto justify-center" href="#" dir="ltr">
-                <i class="fa-solid fa-envelope text-gold"></i> إيميل
-              </a>
-            </div>
-
-            <p class="text-center text-white/45 text-xs mt-2 leading-relaxed">
+            <p class="text-xs text-gray-500 mt-5 text-center">
               تنبيه: هذه صفحة عرض مستقلة وغير رسمية وغير تابعة لأي جهة.
             </p>
           </form>
-
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer (only 3 buttons) -->
-  <footer class="bg-darkBlue pt-10 pb-8 border-t border-white/10">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
-        <div class="text-center md:text-right">
-          <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3">
-            <a id="callBtnFooter" class="contact-btn" href="#">
-              <i class="fa-solid fa-phone text-gold"></i> اتصال
-              <span class="text-white/55 text-sm" dir="ltr" id="phoneFooter"></span>
-            </a>
-            <a id="waBtnFooter" class="contact-btn gold" href="#" target="_blank" rel="noopener">
-              <i class="fa-brands fa-whatsapp text-gold"></i> واتساب
-            </a>
-            <a id="mailBtnFooter" class="contact-btn" href="#" dir="ltr">
-              <i class="fa-solid fa-envelope text-gold"></i> Email
-            </a>
-          </div>
-        </div>
+  <!-- Footer: 3 buttons only -->
+  <footer class="bg-darkBlue pt-12 pb-8 border-t border-gray-800">
+    <div class="container mx-auto px-6 text-center">
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
+        <a id="btnCallFooter" class="btn" href="#"><i class="fas fa-phone text-gold"></i> اتصال</a>
+        <a id="btnWaFooter" class="btn btn-gold" href="#" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
+        <a id="btnMailFooter" class="btn" href="#" dir="ltr"><i class="fas fa-envelope text-gold"></i> Email</a>
+      </div>
 
-        <div class="text-center md:text-left">
-          <img src="https://i.ibb.co/BHhQ5LHz/SNAP-THE-NAME.png" alt="SnapTheName" class="h-20 mx-auto md:mx-0 opacity-90 mb-2 rounded-2xl ring-gold">
-          <p class="text-white/45 text-sm">&copy; <span id="year"></span> SnapTheName</p>
-        </div>
+      <div class="text-gray-600 text-sm font-sans" dir="ltr">
+        &copy; <span id="y"></span> SnapTheName. All rights reserved.
       </div>
     </div>
   </footer>
 
   <script>
-    const $ = (q) => document.querySelector(q);
+    const C = window.CONTACT;
+    document.getElementById("y").textContent = new Date().getFullYear();
 
-    // year
-    $("#year").textContent = new Date().getFullYear();
+    const tel = `tel:${C.phoneIntl}`;
+    const waBase = `https://wa.me/${C.phoneDigits}`;
+    const mailBase = `mailto:${C.email}`;
 
-    // Build contact links everywhere
-    const phoneIntl = window.STN.phoneIntl;
-    const phoneDigits = window.STN.phoneDigits;
-    const email = window.STN.email;
+    function waPrefill(msg){
+      return `${waBase}?text=${encodeURIComponent(msg)}`;
+    }
 
-    const telHref = `tel:${phoneIntl}`;
-    const waHref = `https://wa.me/${phoneDigits}`;
-    const mailHref = `mailto:${email}`;
+    // Top / Hero / Footer buttons
+    const map = {
+      btnCallTop: tel, btnCallTopM: tel, btnCallHero: tel, btnCallFooter: tel,
+      btnWaTop: waPrefill("Hello — please share the PDF brief for the Alam Al-Roum domain portfolio. I’d like a quick call."),
+      btnWaTopM: waPrefill("Hello — please share the PDF brief for the Alam Al-Roum domain portfolio. I’d like a quick call."),
+      btnWaHero: waPrefill("Hello — please share the PDF brief for the Alam Al-Roum domain portfolio. I’d like a quick call."),
+      btnWaFooter: waPrefill("Hello — please share the PDF brief for the Alam Al-Roum domain portfolio. I’d like a quick call."),
+      btnMailTop: mailBase, btnMailTopM: mailBase, btnMailHero: mailBase, btnMailFooter: mailBase
+    };
+    Object.keys(map).forEach(id => { const el = document.getElementById(id); if(el) el.href = map[id]; });
 
-    // Top desktop
-    $("#callBtnTop").href = telHref;
-    $("#waBtnTop").href = waHref;
-    $("#mailBtnTop").href = mailHref;
-    $("#phoneTop").textContent = phoneIntl;
-
-    // Top mobile
-    $("#callBtnTopM").href = telHref;
-    $("#waBtnTopM").href = waHref;
-    $("#mailBtnTopM").href = mailHref;
-
-    // Form quick buttons
-    $("#callBtnForm").href = telHref;
-    $("#waBtnForm").href = waHref;
-    $("#mailBtnForm").href = mailHref;
-
-    // Footer
-    $("#callBtnFooter").href = telHref;
-    $("#waBtnFooter").href = waHref;
-    $("#mailBtnFooter").href = mailHref;
-    $("#phoneFooter").textContent = phoneIntl;
-
-    // Copy contact
-    $("#copyBtn").addEventListener("click", async ()=>{
-      const text =
-`Phone/WhatsApp: ${phoneIntl}
-Email: ${email}`;
-      try{ await navigator.clipboard.writeText(text); alert("تم النسخ ✅"); }
-      catch{ alert("تعذر النسخ تلقائيًا — انسخ من الأزرار/الفوتر."); }
-    });
-
-    // Form submit: create message + show 3 buttons with prefilled WA/Email
-    $("#requestForm").addEventListener("submit", (e)=>{
+    // Form -> opens WhatsApp with filled message (no storage)
+    document.getElementById("reqForm").addEventListener("submit", (e)=>{
       e.preventDefault();
-
-      const name = $("#name").value.trim();
-      const company = $("#company").value.trim();
-      const role = $("#role").value.trim();
-      const emailUser = $("#email").value.trim();
-      const phoneUser = $("#phone").value.trim();
-      const note = $("#note").value.trim();
+      const nm = document.getElementById("nm").value.trim();
+      const co = document.getElementById("co").value.trim();
+      const em = document.getElementById("em").value.trim();
+      const ph = document.getElementById("ph").value.trim();
 
       const msg =
-`طلب الملف (PDF) — AlamAlRoumCity.com
-الاسم: ${name}
-الشركة: ${company}
-المنصب: ${role || "-"}
-الإيميل: ${emailUser}
-الهاتف/واتساب: ${phoneUser}
-ملاحظة: ${note || "-"}`;
+`PDF request — Alam Al-Roum domain portfolio
+Name: ${nm}
+Company: ${co}
+Email: ${em}
+Phone/WhatsApp: ${ph}
+Please send the PDF brief + a quick call slot.`;
 
-      // WhatsApp with message
-      const wa = `${waHref}?text=${encodeURIComponent(msg)}`;
+      window.open(waPrefill(msg), "_blank");
+    });
 
-      // Email with subject/body
-      const subject = encodeURIComponent("AlamAlRoumCity.com — PDF brief request");
-      const body = encodeURIComponent(msg);
-      const mailto = `mailto:${email}?subject=${subject}&body=${body}`;
+    // Form -> email
+    document.getElementById("sendMail").addEventListener("click", ()=>{
+      const nm = document.getElementById("nm").value.trim();
+      const co = document.getElementById("co").value.trim();
+      const em = document.getElementById("em").value.trim();
+      const ph = document.getElementById("ph").value.trim();
 
-      // Success box links
-      $("#callLink").href = telHref;
-      $("#waLink").href = wa;
-      $("#mailLink").href = mailto;
+      const subject = encodeURIComponent("Alam Al-Roum domain portfolio — PDF request");
+      const body = encodeURIComponent(
+`PDF request — Alam Al-Roum domain portfolio
+Name: ${nm}
+Company: ${co}
+Email: ${em}
+Phone/WhatsApp: ${ph}
 
-      $("#successBox").classList.remove("hidden");
-      $("#successBox").scrollIntoView({behavior:"smooth", block:"center"});
+Please send the PDF brief + a quick call slot.`
+      );
+      window.location.href = `${mailBase}?subject=${subject}&body=${body}`;
     });
   </script>
 </body>
