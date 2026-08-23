@@ -1,360 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>محفظة Alam Al-Roum | SnapTheName</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>مدينة علم الروم 2026 | الدليل المستقل للمشروع والتطورات والمخطط</title>
+  <meta name="description" content="دليل مستقل ومحدث عن مدينة علم الروم بالساحل الشمالي: المشروع، الموقع، المخطط، الشاطئ، المارينا، البحيرات، الجولف، أحدث التطورات الرسمية وروابط المصادر.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="theme-color" content="#062a31">
+  <link rel="canonical" href="https://alamalroumcity.com/">
+  <link rel="alternate" hreflang="ar-eg" href="https://alamalroumcity.com/">
+  <link rel="alternate" hreflang="x-default" href="https://alamalroumcity.com/">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ar_EG">
+  <meta property="og:site_name" content="Alam Al Roum City">
+  <meta property="og:title" content="مدينة علم الروم — افهم المدينة قبل أن تتابع الفرصة">
+  <meta property="og:description" content="المشروع، المخطط، الموقع، أحدث التطورات الرسمية ودليل مستقل لمتابعة مدينة علم الروم.">
+  <meta property="og:url" content="https://alamalroumcity.com/">
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="مدينة علم الروم | الدليل المستقل">
+  <meta name="twitter:description" content="معلومات موثقة ومحدثة عن مدينة علم الروم بالساحل الشمالي.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics 4: replace G-MSPMRQPLLD with the GA4 Measurement ID for AlamAlRoumCity.com -->
+  <script>window.ALAM_CITY_GA4_ID='G-MSPMRQPLLD';</script>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Tajawal', 'sans-serif'] },
-          colors: { gold:'#D4AF37', darkBlue:'#050A15', premiumGray:'#111827', accent:'#1E293B' },
-          boxShadow: { luxe:'0 18px 50px rgba(0,0,0,.45)' }
-        }
-      }
-    }
+  (function(){
+    var id=window.ALAM_CITY_GA4_ID;
+    if(!id||id==='G-MSPMRQPLLD') return;
+    var s=document.createElement('script');
+    s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(id);
+    document.head.appendChild(s);
+    window.dataLayer=window.dataLayer||[];
+    window.gtag=function(){dataLayer.push(arguments);};
+    gtag('js',new Date());
+    gtag('config',id,{send_page_view:true,cookie_flags:'SameSite=None;Secure'});
+  })();
   </script>
 
-  <style>
-    body { font-family: 'Tajawal', sans-serif; scroll-behavior: smooth; }
-    .hero-bg {
-      background-image:
-        radial-gradient(900px 450px at 15% -10%, rgba(212,175,55,.18), transparent 60%),
-        linear-gradient(rgba(5,10,21,0.90), rgba(5,10,21,0.82)),
-        url('https://i.ibb.co/tpTkLjCq/alamalroumcity-com.jpg');
-      background-size: cover; background-position: center; background-attachment: fixed;
-    }
-    .domain-card {
-      background: linear-gradient(145deg, #111827, #1E293B);
-      border: 1px solid rgba(212, 175, 55, 0.15);
-      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
-    }
-    .domain-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(212,175,55,0.7);
-      box-shadow: 0 10px 30px -10px rgba(212,175,55,0.28);
-    }
-    .glass{
-      background: rgba(255,255,255,.06);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255,255,255,.10);
-    }
-    .btn {
-      display:inline-flex; align-items:center; justify-content:center; gap:.55rem;
-      padding:.75rem 1rem; border-radius:999px;
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      transition:.2s ease;
-    }
-    .btn:hover { background: rgba(255,255,255,.10); transform: translateY(-1px); }
-    .btn-gold{
-      border-color: rgba(212,175,55,.40);
-      background: rgba(212,175,55,.16);
-      color: #F7F2E3;
-      font-weight: 800;
-    }
-    .btn-gold:hover{ background: rgba(212,175,55,.22); }
-    .form-input {
-      width: 100%;
-      padding: 0.85rem 1.1rem;
-      background-color: #050A15;
-      border: 1px solid #374151;
-      border-radius: 0.75rem;
-      color: #f3f4f6;
-      transition: all 0.25s;
-      outline: none;
-    }
-    .form-input:focus {
-      border-color: #D4AF37;
-      box-shadow: 0 0 0 3px rgba(212,175,55,0.18);
-    }
-  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"WebSite","@id":"https://alamalroumcity.com/#website","url":"https://alamalroumcity.com/","name":"Alam Al Roum City","alternateName":"مدينة علم الروم","inLanguage":"ar-EG"},
+      {"@type":"WebPage","@id":"https://alamalroumcity.com/#webpage","url":"https://alamalroumcity.com/","name":"مدينة علم الروم 2026 | الدليل المستقل للمشروع والتطورات والمخطط","description":"دليل مستقل ومحدث عن مدينة علم الروم بالساحل الشمالي: المشروع والموقع والمخطط وأحدث التطورات الرسمية.","inLanguage":"ar-EG","isPartOf":{"@id":"https://alamalroumcity.com/#website"},"dateModified":"2026-08-23","about":{"@type":"Place","name":"Alam Al Roum","alternateName":"علم الروم","address":{"@type":"PostalAddress","addressRegion":"Matrouh","addressCountry":"EG"}}},
+      {"@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"ما هي مدينة علم الروم؟","acceptedAnswer":{"@type":"Answer","text":"علم الروم مشروع عمراني وسياحي متكامل قيد التطوير على الساحل الشمالي بمحافظة مطروح، تطوره شركة الديار القطرية بالشراكة مع هيئة المجتمعات العمرانية الجديدة المصرية."}},
+        {"@type":"Question","name":"أين تقع علم الروم؟","acceptedAnswer":{"@type":"Answer","text":"تقع الوجهة على الساحل المتوسطي غرب مدينة مرسى مطروح، ويشير المطور إلى قربها من مطار مرسى مطروح الدولي."}},
+        {"@type":"Question","name":"ما مساحة مشروع علم الروم؟","acceptedAnswer":{"@type":"Answer","text":"تذكر البيانات الرسمية للديار القطرية أن المشروع يمتد على نحو 20.58 مليون متر مربع، بما يقارب 4,900 فدان، مع واجهة شاطئية بطول 7.2 كيلومتر."}},
+        {"@type":"Question","name":"هل هذا الموقع تابع للديار القطرية؟","acceptedAnswer":{"@type":"Answer","text":"لا. AlamAlRoumCity.com دليل معلومات مستقل وغير تابع للمطور أو لأي جهة حكومية، وتُعرض المعلومات مع روابط للمصادر الرسمية عند توفرها."}}
+      ]}
+    ]
+  }
+  </script>
+
+<style>
+:root{--deep:#05262d;--deep2:#083a42;--teal:#0b7475;--teal2:#159a96;--aqua:#72cfc5;--gold:#c9a55e;--gold2:#ead7a5;--ivory:#faf7f0;--white:#fff;--ink:#142e34;--muted:#687b7f;--line:rgba(5,38,45,.12);--shadow:0 26px 70px rgba(5,38,45,.13);--shadow2:0 12px 34px rgba(5,38,45,.08);--max:1200px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--ivory);font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;line-height:1.9;overflow-x:hidden}::selection{background:var(--gold2);color:var(--deep)}a{color:inherit;text-decoration:none}.container{width:min(calc(100% - 32px),var(--max));margin-inline:auto}h1,h2,h3,.brand strong,.stat strong{font-family:"Noto Kufi Arabic","IBM Plex Sans Arabic",sans-serif}.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:900;color:var(--teal);margin-bottom:9px}.eyebrow:before{content:"";width:28px;height:2px;border-radius:2px;background:var(--gold)}.btn{min-height:50px;border:0;border-radius:999px;padding:12px 23px;display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:900;cursor:pointer;transition:.22s ease}.btn:hover{transform:translateY(-2px)}.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:var(--deep);box-shadow:0 15px 35px rgba(201,165,94,.23)}.btn-outline{border:1px solid rgba(5,38,45,.18);background:#fff;color:var(--deep)}
+.site-header{position:fixed;z-index:100;top:0;right:0;left:0;background:rgba(4,29,35,.82);border-bottom:1px solid rgba(255,255,255,.09);backdrop-filter:blur(18px);color:#fff}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:11px}.brand-mark{width:45px;height:45px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(145deg,var(--gold2),var(--gold));color:var(--deep);font-weight:900;font-size:20px}.brand strong{display:block;font-size:15px}.brand small{display:block;font-size:9px;color:#c5d6d8;margin-top:1px}.nav-links{display:flex;align-items:center;gap:22px;font-size:12px;font-weight:800}.nav-links a{color:#e9f1f2;opacity:.88}.nav-links a:hover{opacity:1;color:var(--gold2)}.header-cta{min-height:42px;padding:8px 18px;font-size:12px}
+.hero{min-height:790px;padding:132px 0 78px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(circle at 82% 18%,rgba(114,207,197,.17),transparent 27%),radial-gradient(circle at 15% 75%,rgba(201,165,94,.14),transparent 27%),linear-gradient(135deg,#02191f 0%,#073b43 54%,#0b6567 100%)}.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;left:-150px;bottom:-250px;border:1px solid rgba(255,255,255,.08);box-shadow:0 0 0 70px rgba(255,255,255,.025),0 0 0 140px rgba(255,255,255,.018)}.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.07fr .93fr;gap:64px;align-items:center}.hero .eyebrow{color:var(--gold2)}.hero h1{margin:5px 0 20px;font-size:clamp(38px,5vw,73px);line-height:1.28;letter-spacing:-1.7px}.hero h1 span{color:var(--gold2)}.hero-lead{color:#d4e3e4;font-size:17px;line-height:2;max-width:680px;margin-bottom:26px}.hero-actions{display:flex;flex-wrap:wrap;gap:11px}.hero-note{color:#a9c1c4;font-size:10px;margin-top:14px}.hero-art{min-height:470px;position:relative;border-radius:36px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.025));box-shadow:0 35px 100px rgba(0,0,0,.23);overflow:hidden}.sea{position:absolute;right:0;left:0;bottom:0;height:54%;background:linear-gradient(180deg,#0e7c7e,#0a5c68 65%,#073947)}.coast{position:absolute;width:125%;height:52%;left:-12%;bottom:31%;background:#d9c99e;border-radius:50% 60% 30% 70%;transform:rotate(-7deg)}.lagoon{position:absolute;width:200px;height:82px;right:16%;bottom:36%;border-radius:50%;background:#55bfc0;border:8px solid rgba(245,230,191,.7);transform:rotate(-8deg)}.city-lines{position:absolute;inset:18% 12% auto 12%;height:30%;background:linear-gradient(90deg,transparent 0 10%,rgba(255,255,255,.16) 10% 10.6%,transparent 10.6% 26%,rgba(255,255,255,.13) 26% 26.6%,transparent 26.6% 54%,rgba(255,255,255,.13) 54% 54.6%,transparent 54.6%),linear-gradient(0deg,transparent 0 25%,rgba(255,255,255,.12) 25% 26%,transparent 26% 57%,rgba(255,255,255,.11) 57% 58%,transparent 58%);border:1px solid rgba(255,255,255,.12);border-radius:22px}.art-label{position:absolute;top:26px;right:26px;padding:11px 14px;border-radius:14px;background:rgba(2,25,31,.66);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.13);font-size:10px;font-weight:800}.art-caption{position:absolute;left:24px;right:24px;bottom:23px;padding:14px 16px;border-radius:16px;background:rgba(2,25,31,.77);backdrop-filter:blur(10px);font-size:11px;color:#dce8e9;border:1px solid rgba(255,255,255,.13)}
+.stats-wrap{margin-top:-42px;position:relative;z-index:5}.stats{display:grid;grid-template-columns:repeat(4,1fr);border-radius:26px;background:#fff;box-shadow:var(--shadow);border:1px solid var(--line);overflow:hidden}.stat{padding:24px 22px;border-left:1px solid var(--line)}.stat:last-child{border-left:0}.stat small{display:block;color:var(--muted);font-size:10px;font-weight:800}.stat strong{display:block;color:var(--deep);font-size:24px;margin:2px 0}.stat span{display:block;color:#789096;font-size:9px}
+.section{padding:90px 0}.section.alt{background:#fff}.section-head{max-width:760px;margin-bottom:38px}.section h2{font-size:clamp(27px,3.4vw,43px);line-height:1.45;margin:0 0 12px;color:var(--deep)}.section-head p{color:var(--muted);font-size:15px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:24px;background:#fff;padding:25px;box-shadow:var(--shadow2)}.card .icon{width:46px;height:46px;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#e5f5f2,#f8f4ea);color:var(--teal);font-weight:900;margin-bottom:17px}.card h3{font-size:16px;margin:0 0 8px;color:var(--deep)}.card p{font-size:12px;color:var(--muted);margin:0}
+.fact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.fact{padding:26px;border-radius:24px;border:1px solid var(--line);background:linear-gradient(145deg,#fff,#f8f5ed)}.fact strong{font-family:"Noto Kufi Arabic";font-size:26px;color:var(--deep)}.fact b{font-size:12px;color:var(--teal)}.fact p{color:var(--muted);font-size:12px;margin:9px 0 0}.source-link{display:inline-flex;margin-top:14px;font-size:10px;font-weight:900;color:var(--teal);border-bottom:1px solid rgba(11,116,117,.28)}
+.timeline{position:relative;margin-top:20px}.timeline:before{content:"";position:absolute;right:18px;top:10px;bottom:10px;width:2px;background:#dce5e2}.timeline-item{position:relative;padding:0 55px 34px 0}.timeline-item:last-child{padding-bottom:0}.dot{position:absolute;right:7px;top:4px;width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,var(--gold2),var(--gold));border:5px solid #fff;box-shadow:0 0 0 1px rgba(201,165,94,.45)}.timeline-item time{display:block;color:var(--teal);font-size:10px;font-weight:900;margin-bottom:4px}.timeline-item h3{margin:0 0 6px;font-size:16px;color:var(--deep)}.timeline-item p{margin:0;color:var(--muted);font-size:12px}
+.realestate{padding:0 0 90px}.realestate-box{position:relative;overflow:hidden;border-radius:32px;padding:46px;color:#fff;background:radial-gradient(circle at 12% 10%,rgba(234,215,165,.16),transparent 30%),linear-gradient(135deg,#05262d,#0a5e63)}.realestate-content{position:relative;z-index:2;display:grid;grid-template-columns:1fr auto;gap:32px;align-items:center}.realestate-box .eyebrow{color:var(--gold2)}.realestate-box h2{color:#fff;margin:0 0 10px;font-size:32px}.realestate-box p{margin:0;color:#d0e0e1;max-width:760px;font-size:13px}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}details{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 19px;box-shadow:0 8px 24px rgba(5,38,45,.04)}summary{cursor:pointer;font-weight:900;color:var(--deep);font-size:13px}details p{font-size:12px;color:var(--muted);margin:12px 0 0}.sources{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.source-card{display:flex;gap:13px;align-items:flex-start;padding:17px 18px;border-radius:17px;background:#fff;border:1px solid var(--line);transition:.2s ease}.source-card:hover{transform:translateY(-2px);box-shadow:var(--shadow2)}.source-no{min-width:31px;height:31px;border-radius:10px;display:grid;place-items:center;background:#edf6f4;color:var(--teal);font-weight:900;font-size:11px}.source-card strong{display:block;font-size:12px;color:var(--deep)}.source-card small{display:block;color:var(--muted);font-size:9px;margin-top:2px}
+footer{background:#031b21;color:#c6d6d8;padding:50px 0 92px}.footer-grid{display:grid;grid-template-columns:1.5fr .7fr .8fr;gap:35px}footer h3{color:#fff;margin:0 0 10px;font-size:15px}footer p,footer a{font-size:10px;color:#a9bdc0}.footer-links{display:grid;gap:7px}.disclaimer{margin-top:32px;padding-top:20px;border-top:1px solid rgba(255,255,255,.09);color:#8ba4a8;font-size:9px;line-height:1.8}.mobile-cta{display:none;position:fixed;bottom:12px;right:12px;left:12px;z-index:90;padding:8px;background:rgba(3,27,33,.9);border:1px solid rgba(255,255,255,.12);border-radius:20px;backdrop-filter:blur(15px)}.mobile-cta .btn{width:100%}.analytics-owner-warning{display:none}body.analytics-setup .analytics-owner-warning{display:block;background:#fff1c9;color:#644d12;border:1px solid #e6c86c;padding:10px 14px;text-align:center;font-size:11px;font-weight:800}
+@media(max-width:980px){.nav-links{display:none}.hero-grid{grid-template-columns:1fr;gap:38px}.hero{min-height:auto}.hero-art{min-height:390px}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-left:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.cards{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}.realestate-content{grid-template-columns:1fr}}
+@media(max-width:680px){.container{width:min(calc(100% - 22px),var(--max))}.site-header .nav{height:68px}.brand-mark{width:40px;height:40px}.brand strong{font-size:13px}.header-cta{display:none}.hero{padding:110px 0 66px}.hero h1{font-size:39px;letter-spacing:-.8px}.hero-lead{font-size:14px}.hero-actions{display:grid}.hero-actions .btn{width:100%}.hero-art{min-height:330px;border-radius:26px}.stats-wrap{margin-top:-28px}.stat{padding:18px 15px}.stat strong{font-size:20px}.section{padding:68px 0}.cards,.fact-grid,.faq,.sources{grid-template-columns:1fr}.realestate{padding-bottom:78px}.realestate-box{padding:30px 24px;border-radius:25px}.realestate-box h2{font-size:24px}.footer-grid{grid-template-columns:1fr}footer{padding-bottom:105px}.mobile-cta{display:block}}
+</style>
 </head>
-
-<body class="bg-darkBlue text-gray-200 antialiased selection:bg-gold selection:text-darkBlue">
-
-  <!-- CONFIG -->
-  <script>
-    window.CONTACT = {
-      phoneIntl: "+201000001802",
-      phoneDigits: "201000001802",
-      email: "hussein.lashin@snapthename.com"
-    };
-  </script>
-
-  <!-- Header -->
-  <header class="fixed top-0 w-full z-50 border-b border-gray-800/80 bg-darkBlue/85 backdrop-blur-md">
-    <div class="container mx-auto px-6 py-3 flex justify-between items-center gap-4">
-      <div class="flex items-center gap-5">
-        <img src="https://i.ibb.co/BHhQ5LHz/SNAP-THE-NAME.png" alt="SnapTheName"
-             class="h-20 md:h-24 object-contain drop-shadow-[0_0_15px_rgba(212,175,55,0.25)]">
-        <div class="hidden sm:block">
-          <span class="text-3xl font-black text-white tracking-widest uppercase font-sans block leading-none" dir="ltr">
-            SNAP <span class="text-gold">THE NAME</span>
-          </span>
-          <span class="text-xs text-gold/80 tracking-widest font-sans uppercase mt-1 block" dir="ltr">
-            Premium B2B Domains
-          </span>
-        </div>
-      </div>
-
-      <!-- 3 buttons only -->
-      <div class="hidden lg:flex gap-3 items-center">
-        <a id="btnCallTop" class="btn" href="#"><i class="fas fa-phone text-gold"></i> اتصال</a>
-        <a id="btnWaTop" class="btn btn-gold" href="#" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
-        <a id="btnMailTop" class="btn" href="#" dir="ltr"><i class="fas fa-envelope text-gold"></i> Email</a>
-      </div>
-
-      <!-- mobile icons -->
-      <div class="lg:hidden flex gap-2 items-center">
-        <a id="btnCallTopM" class="btn px-3" href="#" title="Call"><i class="fas fa-phone text-gold"></i></a>
-        <a id="btnWaTopM" class="btn btn-gold px-3" href="#" target="_blank" rel="noopener" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a id="btnMailTopM" class="btn px-3" href="#" title="Email"><i class="fas fa-envelope text-gold"></i></a>
-      </div>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="hero-bg min-h-screen flex items-center pt-28 pb-12">
-    <div class="container mx-auto px-6 text-center">
-
-      <div class="inline-block mb-6 px-6 py-2 border border-gold/40 bg-gold/10 backdrop-blur-sm rounded-full">
-        <span class="text-gold font-bold tracking-wider text-sm md:text-base uppercase flex items-center gap-2">
-          <i class="fas fa-layer-group text-xs"></i> Portfolio Bundle (4 Strategic Domains)
-        </span>
-      </div>
-
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
-        محفظة نطاقات مخصصة لاسم <br>
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold to-yellow-200">Alam Al-Roum</span>
-      </h1>
-
-      <p class="text-lg md:text-2xl text-gray-300 mb-10 max-w-4xl mx-auto leading-relaxed">
-        4 نطاقات تغطّي المدينة/الساحل/الفنادق/العقار — لتقليل تشتيت الاسم وتحويل الاهتمام لتواصل مباشر منظم.
-      </p>
-
-      <!-- Transfer reassurance (2 lines) -->
-      <div class="max-w-5xl mx-auto glass rounded-2xl p-5 mb-10 text-right">
-        <div class="flex items-start gap-3">
-          <i class="fas fa-lock text-gold mt-1"></i>
-          <div class="text-gray-200/90 leading-relaxed">
-            <div>نقل الملكية يتم عبر شركة تسجيل النطاقات (Registrar) باستخدام Auth-Code/Transfer — إجراء قياسي وموثّق.</div>
-            <div>بدون مشاركة كلمات مرور: بعد التأكيد يصبح النطاق تحت سيطرة المشتري بالكامل.</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-10">
-        <div class="domain-card p-6 rounded-xl text-center">
-          <h3 class="text-xl font-bold text-white mb-1" dir="ltr">alamalroumcity<span class="text-gold">.com</span></h3>
-          <p class="text-xs text-gray-400">الاسم المظلة (routing) للمدينة/الوجهة</p>
-        </div>
-
-        <div class="domain-card p-6 rounded-xl text-center border-gold/35 shadow-[0_0_15px_rgba(212,175,55,0.14)] relative overflow-hidden">
-          <div class="absolute top-0 right-0 bg-gold text-darkBlue text-[10px] font-bold px-2 py-1 rounded-bl-lg">High Intent</div>
-          <h3 class="text-xl font-bold text-white mb-1" dir="ltr">alamalroumrealestate<span class="text-gold">.com</span></h3>
-          <p class="text-xs text-gray-400">بوابة استفسارات عقارية/وسطاء/مزودين</p>
-        </div>
-
-        <div class="domain-card p-6 rounded-xl text-center">
-          <h3 class="text-xl font-bold text-white mb-1" dir="ltr">alamalroumhotels<span class="text-gold">.com</span></h3>
-          <p class="text-xs text-gray-400">للضيافة: حجوزات/شراكات/سلاسل</p>
-        </div>
-
-        <div class="domain-card p-6 rounded-xl text-center">
-          <h3 class="text-xl font-bold text-white mb-1" dir="ltr">alamalroumcoast<span class="text-gold">.com</span></h3>
-          <p class="text-xs text-gray-400">للوجهة الساحلية: محتوى/PR/دليل</p>
-        </div>
-      </div>
-
-      <!-- 3 buttons -->
-      <div class="flex flex-col sm:flex-row justify-center gap-3">
-        <a id="btnCallHero" class="btn" href="#"><i class="fas fa-phone text-gold"></i> اتصال</a>
-        <a id="btnWaHero" class="btn btn-gold" href="#" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
-        <a id="btnMailHero" class="btn" href="#" dir="ltr"><i class="fas fa-envelope text-gold"></i> Email</a>
-      </div>
-
-      <p class="text-xs text-gray-400 mt-6">
-        تنبيه: صفحة عرض مستقلة وغير رسمية وغير تابعة لأي جهة.
-      </p>
-    </div>
-  </section>
-
-  <!-- Numbers -->
-  <section class="py-20 bg-premiumGray border-y border-gray-800">
-    <div class="container mx-auto px-6">
-      <div class="text-center mb-14">
-        <h2 class="text-3xl md:text-4xl text-white font-bold mb-4">لغة الأرقام (Announced / Reported)</h2>
-        <p class="text-gray-400 text-lg">مختصر أرقام متداولة في تقارير عامة — للتوثيق التفصيلي داخل PDF.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="p-8 bg-darkBlue rounded-2xl border border-gray-800 shadow-2xl">
-          <div class="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mb-6">
-            <i class="fas fa-chart-bar text-2xl text-gold"></i>
-          </div>
-          <h3 class="text-4xl font-black text-white mb-2" dir="ltr">$29.7B</h3>
-          <p class="text-lg text-gray-300 font-bold mb-2">إجمالي الاستثمار المُعلن</p>
-          <p class="text-sm text-gray-500 leading-relaxed">مذكور في تقارير Reuters وبيانات حكومية منشورة.</p>
-        </div>
-
-        <div class="p-8 bg-darkBlue rounded-2xl border border-gray-800 shadow-2xl">
-          <div class="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mb-6">
-            <i class="fas fa-vector-square text-2xl text-gold"></i>
-          </div>
-          <h3 class="text-4xl font-black text-white mb-2">≈ 1,985 ha</h3>
-          <p class="text-lg text-gray-300 font-bold mb-2">≈ 4,900 acres (تقريبًا)</p>
-          <p class="text-sm text-gray-500 leading-relaxed">مساحة مذكورة في تقارير عامة عن المشروع.</p>
-        </div>
-
-        <div class="p-8 bg-darkBlue rounded-2xl border border-gray-800 shadow-2xl">
-          <div class="w-14 h-14 bg-gold/10 rounded-full flex items-center justify-center mb-6">
-            <i class="fas fa-magnifying-glass-chart text-2xl text-gold"></i>
-          </div>
-          <h3 class="text-4xl font-black text-white mb-2" dir="ltr">Exact-Match</h3>
-          <p class="text-lg text-gray-300 font-bold mb-2">وضوح إحالة + تقليل تشتيت الاسم</p>
-          <p class="text-sm text-gray-500 leading-relaxed">يدعم قابلية الفهم والفهرسة وفق إرشادات Google العامة.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Simple form: opens WhatsApp/Email (no storage) -->
-  <section id="lead-form" class="py-22 bg-darkBlue border-t border-gray-800">
-    <div class="container mx-auto px-6 py-16">
-      <div class="max-w-4xl mx-auto">
-        <div class="text-center mb-10">
-          <h2 class="text-3xl md:text-5xl font-black text-white mb-3">اطلب الملف التعريفي (PDF)</h2>
-          <p class="text-lg text-gray-400">املأ البيانات لتجهيز رسالة إرسال سريعة عبر واتساب أو البريد.</p>
-        </div>
-
-        <div class="bg-premiumGray p-8 md:p-12 rounded-2xl border border-gray-700 shadow-2xl">
-          <form id="reqForm">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div>
-                <label class="block text-gray-300 text-sm font-bold mb-2">الاسم *</label>
-                <input id="nm" type="text" required class="form-input" placeholder="اسمك">
-              </div>
-              <div>
-                <label class="block text-gray-300 text-sm font-bold mb-2">الشركة *</label>
-                <input id="co" type="text" required class="form-input" placeholder="اسم الشركة">
-              </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div>
-                <label class="block text-gray-300 text-sm font-bold mb-2">Corporate Email *</label>
-                <input id="em" type="email" required class="form-input" placeholder="name@company.com" dir="ltr">
-              </div>
-              <div>
-                <label class="block text-gray-300 text-sm font-bold mb-2">Mobile / WhatsApp *</label>
-                <input id="ph" type="tel" required class="form-input" placeholder="+20 100 000 0000" dir="ltr">
-              </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row gap-3">
-              <button type="submit" class="w-full md:w-1/2 bg-gradient-to-r from-gold to-yellow-600 text-darkBlue py-4 rounded-xl font-black text-lg hover:from-yellow-500 hover:to-yellow-400 transition duration-300 shadow-[0_0_20px_rgba(212,175,55,0.25)] flex justify-center items-center gap-3">
-                <i class="fab fa-whatsapp"></i>
-                <span>إرسال عبر واتساب</span>
-              </button>
-
-              <button type="button" id="sendMail" class="w-full md:w-1/2 border border-gold/35 bg-gold/10 text-gold py-4 rounded-xl font-black text-lg hover:bg-gold hover:text-darkBlue transition duration-300 flex justify-center items-center gap-3" dir="ltr">
-                <i class="fas fa-envelope"></i>
-                <span>Send Email</span>
-              </button>
-            </div>
-
-            <p class="text-xs text-gray-500 mt-5 text-center">
-              تنبيه: هذه صفحة عرض مستقلة وغير رسمية وغير تابعة لأي جهة.
-            </p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer: 3 buttons only -->
-  <footer class="bg-darkBlue pt-12 pb-8 border-t border-gray-800">
-    <div class="container mx-auto px-6 text-center">
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
-        <a id="btnCallFooter" class="btn" href="#"><i class="fas fa-phone text-gold"></i> اتصال</a>
-        <a id="btnWaFooter" class="btn btn-gold" href="#" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> واتساب</a>
-        <a id="btnMailFooter" class="btn" href="#" dir="ltr"><i class="fas fa-envelope text-gold"></i> Email</a>
-      </div>
-
-      <div class="text-gray-600 text-sm font-sans" dir="ltr">
-        &copy; <span id="y"></span> SnapTheName. All rights reserved.
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    const C = window.CONTACT;
-    document.getElementById("y").textContent = new Date().getFullYear();
-
-    const tel = `tel:${C.phoneIntl}`;
-    const waBase = `https://wa.me/${C.phoneDigits}`;
-    const mailBase = `mailto:${C.email}`;
-
-    function waPrefill(msg){
-      return `${waBase}?text=${encodeURIComponent(msg)}`;
-    }
-
-    // Top / Hero / Footer buttons
-    const map = {
-      btnCallTop: tel, btnCallTopM: tel, btnCallHero: tel, btnCallFooter: tel,
-      btnWaTop: waPrefill("Hello — please share the PDF brief for the Alam Al-Roum domain portfolio. I’d like a quick call."),
-      btnWaTopM: waPrefill("Hello — please share the PDF brief for the Alam Al-Roum domain portfolio. I’d like a quick call."),
-      btnWaHero: waPrefill("Hello — please share the PDF brief for the Alam Al-Roum domain portfolio. I’d like a quick call."),
-      btnWaFooter: waPrefill("Hello — please share the PDF brief for the Alam Al-Roum domain portfolio. I’d like a quick call."),
-      btnMailTop: mailBase, btnMailTopM: mailBase, btnMailHero: mailBase, btnMailFooter: mailBase
-    };
-    Object.keys(map).forEach(id => { const el = document.getElementById(id); if(el) el.href = map[id]; });
-
-    // Form -> opens WhatsApp with filled message (no storage)
-    document.getElementById("reqForm").addEventListener("submit", (e)=>{
-      e.preventDefault();
-      const nm = document.getElementById("nm").value.trim();
-      const co = document.getElementById("co").value.trim();
-      const em = document.getElementById("em").value.trim();
-      const ph = document.getElementById("ph").value.trim();
-
-      const msg =
-`PDF request — Alam Al-Roum domain portfolio
-Name: ${nm}
-Company: ${co}
-Email: ${em}
-Phone/WhatsApp: ${ph}
-Please send the PDF brief + a quick call slot.`;
-
-      window.open(waPrefill(msg), "_blank");
-    });
-
-    // Form -> email
-    document.getElementById("sendMail").addEventListener("click", ()=>{
-      const nm = document.getElementById("nm").value.trim();
-      const co = document.getElementById("co").value.trim();
-      const em = document.getElementById("em").value.trim();
-      const ph = document.getElementById("ph").value.trim();
-
-      const subject = encodeURIComponent("Alam Al-Roum domain portfolio — PDF request");
-      const body = encodeURIComponent(
-`PDF request — Alam Al-Roum domain portfolio
-Name: ${nm}
-Company: ${co}
-Email: ${em}
-Phone/WhatsApp: ${ph}
-
-Please send the PDF brief + a quick call slot.`
-      );
-      window.location.href = `${mailBase}?subject=${subject}&body=${body}`;
-    });
-  </script>
+<body>
+<div class="analytics-owner-warning">Google Analytics لن يبدأ التسجيل حتى تستبدل G-MSPMRQPLLD بالـ Measurement ID الخاص بـ AlamAlRoumCity.com.</div>
+<header class="site-header"><div class="container nav"><a class="brand" href="#top" data-track="nav_home"><div class="brand-mark">ع</div><div><strong>مدينة علم الروم</strong><small>دليل مستقل · معلومات موثقة</small></div></a><nav class="nav-links"><a href="#about" data-track="nav_about">عن المدينة</a><a href="#facts" data-track="nav_facts">الأرقام</a><a href="#timeline" data-track="nav_timeline">التطورات</a><a href="#sources" data-track="nav_sources">المصادر</a></nav><a class="btn btn-gold header-cta realestate-link" href="https://alamalroumrealestate.com/?utm_source=alamalroumcity.com&utm_medium=referral&utm_campaign=city_to_realestate&utm_content=header" data-placement="header">أفكر في الشراء</a></div></header>
+<main id="top">
+<section class="hero"><div class="container hero-grid"><div><span class="eyebrow">Alam Al Roum City · North Coast</span><h1>افهم <span>مدينة علم الروم</span><br>قبل أن تتابع الفرصة.</h1><p class="hero-lead">مرجع مستقل يجمع أهم المعلومات الرسمية عن المشروع، والموقع، والمخطط، وأحدث التطورات المعلنة — بعيدًا عن الضوضاء التسويقية.</p><div class="hero-actions"><a class="btn btn-gold" href="#facts" data-track="hero_explore">استكشف المدينة</a><a class="btn btn-outline realestate-link" href="https://alamalroumrealestate.com/?utm_source=alamalroumcity.com&utm_medium=referral&utm_campaign=city_to_realestate&utm_content=hero" data-placement="hero">أفكر في شراء أو استثمار عقاري</a></div><div class="hero-note">الموقع مستقل وغير تابع للديار القطرية أو لأي جهة حكومية.</div></div><div class="hero-art" aria-label="رسم تصوري مجرد لمدينة ساحلية"><div class="city-lines"></div><div class="coast"></div><div class="lagoon"></div><div class="sea"></div><div class="art-label">مدينة ساحلية متكاملة · قيد التطوير</div><div class="art-caption">الرسم تجريدي للتصميم فقط وليس مخططًا رسميًا للمشروع.</div></div></div></section>
+<div class="container stats-wrap"><div class="stats"><div class="stat"><small>المساحة المعلنة</small><strong>20.58 مليون م²</strong><span>بيانات الديار القطرية</span></div><div class="stat"><small>الواجهة الشاطئية</small><strong>7.2 كم</strong><span>على البحر المتوسط</span></div><div class="stat"><small>الاستثمارات الإجمالية</small><strong>29.7 مليار $</strong><span>على مستوى المشروع</span></div><div class="stat"><small>بداية تسليم المرحلة الأولى</small><strong>2030</strong><span>وفق إعلان أغسطس 2026</span></div></div></div>
+<section class="section" id="about" data-section="about"><div class="container"><div class="section-head"><span class="eyebrow">الصورة الكبيرة</span><h2>ليست مجرد قرية ساحلية.</h2><p>وفق البيانات الرسمية للمطور، يجري تطوير علم الروم كوجهة عمرانية وسياحية متكاملة على الساحل الشمالي بمحافظة مطروح، تجمع السكن والضيافة والتجارة والخدمات والترفيه ضمن مدينة مصممة للحياة على مدار العام.</p></div><div class="cards"><article class="card"><div class="icon">01</div><h3>سكن وحياة طوال العام</h3><p>الرؤية المعلنة تتجاوز الاستخدام الموسمي إلى مدينة يمكن الإقامة والعودة إليها طوال العام.</p></article><article class="card"><div class="icon">02</div><h3>ضيافة وسياحة</h3><p>يتضمن التصور الرسمي فنادق ومنتجعات، مع أكثر من 3,500 غرفة فندقية معلنة على مستوى المشروع.</p></article><article class="card"><div class="icon">03</div><h3>مارينا وبحيرات وجولف</h3><p>من العناصر المعلنة: بحيرات مفتوحة، ملاعب جولف، ومارينا لليخوت تشمل مراسي دولية ومحلية.</p></article><article class="card"><div class="icon">04</div><h3>خدمات وبنية أساسية</h3><p>المخطط المعلن يشمل مرافق تعليمية وصحية وخدمية وبنية أساسية تدعم مفهوم المدينة المتكاملة.</p></article><article class="card"><div class="icon">05</div><h3>مدينة قابلة للمشي</h3><p>أعلنت الديار القطرية عن فلسفة تخطيط تعتمد مسارات المشاة والدراجات وحلول التنقل الذكي.</p></article><article class="card"><div class="icon">06</div><h3>موقع ساحلي متصل</h3><p>يقع المشروع غرب مرسى مطروح، مع قرب معلن من مطار مرسى مطروح واتصال بالطريق الساحلي الدولي.</p></article></div></div></section>
+<section class="section alt" id="facts" data-section="facts"><div class="container"><div class="section-head"><span class="eyebrow">حقائق موثقة</span><h2>الأرقام التي نعرفها رسميًا حتى الآن.</h2><p>نميّز بين ما تم الإعلان عنه رسميًا وما يزال تقديرًا أو مادة تسويقية غير موثقة.</p></div><div class="fact-grid"><article class="fact"><b>مساحة المشروع</b><br><strong>20.58 مليون م²</strong><p>تذكر صفحة المشروع الرسمية مساحة 20,580,000 متر مربع، بينما وصف اتفاق الشراكة المساحة بنحو 4,900 فدان.</p><a class="source-link official-source" target="_blank" rel="noopener" href="https://qataridiar.com/project/alam-al-roum" data-source="qatari_diar_project">المصدر الرسمي ↗</a></article><article class="fact"><b>الشريط الساحلي</b><br><strong>7.2 كيلومتر</strong><p>واجهة بحرية معلنة على ساحل البحر المتوسط ضمن خليج طبيعي غرب مرسى مطروح.</p><a class="source-link official-source" target="_blank" rel="noopener" href="https://qataridiar.com/ar/media/akhbar/qatari-egyptian-investment-partnership-develop-alam-al-roum-area-north-coast" data-source="qatari_diar_partnership">المصدر الرسمي ↗</a></article><article class="fact"><b>الاستثمار الإجمالي</b><br><strong>29.7 مليار دولار</strong><p>الاستثمار المعلن للمشروع بالكامل، ويتضمن 3.5 مليار دولار استثمارات نقدية مباشرة وفق إعلان أغسطس 2026.</p><a class="source-link official-source" target="_blank" rel="noopener" href="https://qataridiar.com/ar/media/khbr-shfy/new-era-integrated-coastal-development-mediterranean" data-source="qatari_diar_phase_one">المصدر الرسمي ↗</a></article><article class="fact"><b>المرحلة الأولى</b><br><strong>التسليم يبدأ 2030</strong><p>أعلنت الديار القطرية في أغسطس 2026 إطلاق المرحلة الأولى، على أن تبدأ عمليات التسليم خلال عام 2030.</p><a class="source-link official-source" target="_blank" rel="noopener" href="https://qataridiar.com/index.php/media/press-release/new-era-integrated-coastal-development-mediterranean" data-source="qatari_diar_phase_one_en">المصدر الرسمي ↗</a></article></div></div></section>
+<section class="section" id="timeline" data-section="timeline"><div class="container"><div class="section-head"><span class="eyebrow">التطورات</span><h2>كيف انتقل المشروع من الاتفاق إلى التنفيذ؟</h2><p>نعرض هنا المحطات الرسمية الرئيسية فقط، ويمكن تحديث هذا الخط الزمني مع كل إعلان موثق جديد.</p></div><div class="timeline"><article class="timeline-item"><div class="dot"></div><time>9 نوفمبر 2025</time><h3>إعلان الشراكة الاستثمارية</h3><p>الديار القطرية وهيئة المجتمعات العمرانية الجديدة تعلنان اتفاق تطوير مشروع عمراني وسياحي متكامل في علم الروم.</p></article><article class="timeline-item"><div class="dot"></div><time>9 أغسطس 2026</time><h3>مراجعة تقدم المشروع</h3><p>اجتماع رسمي بين رئيس مجلس الوزراء المصري والرئيس التنفيذي للديار القطرية لمناقشة مستجدات المشروع.</p></article><article class="timeline-item"><div class="dot"></div><time>12 أغسطس 2026</time><h3>إطلاق المرحلة الأولى</h3><p>الإعلان الرسمي عن انطلاق المرحلة الأولى، مع بداية التسليم المخطط لها خلال 2030.</p></article></div></div></section>
+<section class="realestate"><div class="container"><div class="realestate-box"><div class="realestate-content"><div><span class="eyebrow">من المعلومة إلى القرار</span><h2>هل بدأت تفكر في شراء أو استثمار عقاري؟</h2><p>هذا الموقع مخصص لفهم المدينة. عندما تنتقل من مرحلة المتابعة إلى دراسة الشراء، استخدم دليل المشتري والمستثمر المتخصص لمعرفة المناطق المناسبة وبدء استفسار مؤهل.</p></div><a class="btn btn-gold realestate-link" href="https://alamalroumrealestate.com/?utm_source=alamalroumcity.com&utm_medium=referral&utm_campaign=city_to_realestate&utm_content=midpage" data-placement="midpage">انتقل إلى دليل العقارات</a></div></div></div></section>
+<section class="section alt" id="faq" data-section="faq"><div class="container"><div class="section-head"><span class="eyebrow">أسئلة أساسية</span><h2>ما الذي يجب معرفته عن علم الروم؟</h2></div><div class="faq"><details><summary>ما هي مدينة علم الروم؟</summary><p>مشروع عمراني وسياحي متكامل قيد التطوير على الساحل الشمالي بمحافظة مطروح، تطوره الديار القطرية بالشراكة مع هيئة المجتمعات العمرانية الجديدة.</p></details><details><summary>أين تقع علم الروم؟</summary><p>تقع على الساحل المتوسطي غرب مدينة مرسى مطروح، وتشير الديار القطرية إلى قربها من مطار مرسى مطروح الدولي.</p></details><details><summary>هل بدأ تنفيذ المشروع؟</summary><p>نعم. أعلنت الديار القطرية في أغسطس 2026 إطلاق المرحلة الأولى رسميًا، مع تسليمات مخطط أن تبدأ في 2030.</p></details><details><summary>هل هذا موقع المطور الرسمي؟</summary><p>لا. AlamAlRoumCity.com منصة معلومات مستقلة، ونضع روابط المصادر الرسمية لتسهيل التحقق من المعلومات.</p></details><details><summary>أين أتابع تفاصيل الشراء العقاري؟</summary><p>إذا كان هدفك شراء أو استثمار وحدة، نوجّهك إلى AlamAlRoumRealEstate.com باعتباره المسار المتخصص للمشتري والمستثمر.</p></details><details><summary>هل كل المعلومات والأسعار نهائية؟</summary><p>تفاصيل الطرح والأسعار وخطط السداد قد تتغير. لا تعتمد أي معلومة تجارية إلا بعد التحقق من قناة رسمية أو مخولة.</p></details></div></div></section>
+<section class="section" id="sources" data-section="sources"><div class="container"><div class="section-head"><span class="eyebrow">مصادرنا</span><h2>تحقق بنفسك من المعلومات.</h2><p>المصداقية أهم من كثرة المحتوى. لذلك نعتمد قدر الإمكان على بيانات رسمية منشورة.</p></div><div class="sources"><a class="source-card official-source" target="_blank" rel="noopener" href="https://qataridiar.com/project/alam-al-roum" data-source="project_page"><span class="source-no">01</span><span><strong>صفحة مشروع علم الروم — الديار القطرية</strong><small>المساحة، الموقع، الواجهة الساحلية، الرؤية العامة.</small></span></a><a class="source-card official-source" target="_blank" rel="noopener" href="https://qataridiar.com/ar/media/akhbar/qatari-egyptian-investment-partnership-develop-alam-al-roum-area-north-coast" data-source="partnership_2025"><span class="source-no">02</span><span><strong>إعلان الشراكة — نوفمبر 2025</strong><small>تفاصيل الاتفاق ومكونات المشروع الرئيسية.</small></span></a><a class="source-card official-source" target="_blank" rel="noopener" href="https://qataridiar.com/media/press-release/egyptian-prime-minister-receives-qatari-diar-ceo-discuss-latest-progress-alam" data-source="progress_aug_2026"><span class="source-no">03</span><span><strong>مستجدات المشروع — أغسطس 2026</strong><small>اجتماع رسمي لمناقشة تقدم علم الروم.</small></span></a><a class="source-card official-source" target="_blank" rel="noopener" href="https://qataridiar.com/ar/media/khbr-shfy/new-era-integrated-coastal-development-mediterranean" data-source="phase_one_aug_2026"><span class="source-no">04</span><span><strong>إطلاق المرحلة الأولى — أغسطس 2026</strong><small>الاستثمارات وبداية التسليم ومكونات المرحلة.</small></span></a></div></div></section>
+</main>
+<footer><div class="container"><div class="footer-grid"><div><h3>مدينة علم الروم</h3><p>دليل معلومات مستقل لمتابعة مشروع علم الروم وتطوراته المعلنة.</p></div><div><h3>استكشف</h3><div class="footer-links"><a href="#about">عن المدينة</a><a href="#facts">الأرقام</a><a href="#timeline">التطورات</a><a href="#sources">المصادر</a></div></div><div><h3>المسار العقاري</h3><div class="footer-links"><a class="realestate-link" href="https://alamalroumrealestate.com/?utm_source=alamalroumcity.com&utm_medium=referral&utm_campaign=city_to_realestate&utm_content=footer" data-placement="footer">AlamAlRoumRealEstate.com</a></div></div></div><div class="disclaimer">AlamAlRoumCity.com موقع مستقل وغير تابع لشركة الديار القطرية أو هيئة المجتمعات العمرانية الجديدة أو أي جهة حكومية. المعلومات المنشورة لأغراض المعرفة العامة، ويجب الرجوع إلى الجهات الرسمية للتحقق من أي تفاصيل تجارية أو تعاقدية قبل اتخاذ قرار مالي.</div></div></footer>
+<div class="mobile-cta"><a class="btn btn-gold realestate-link" href="https://alamalroumrealestate.com/?utm_source=alamalroumcity.com&utm_medium=referral&utm_campaign=city_to_realestate&utm_content=mobile_fixed" data-placement="mobile_fixed">أفكر في شراء أو استثمار</a></div>
+<script>
+(function(){
+'use strict';
+function track(name,params){params=params||{};params.site_domain='alamalroumcity.com';if(typeof window.gtag==='function')window.gtag('event',name,params)}
+if(new URLSearchParams(location.search).get('analytics_setup')==='1')document.body.classList.add('analytics-setup');
+document.querySelectorAll('[data-track]').forEach(function(el){el.addEventListener('click',function(){track(el.getAttribute('data-track'),{link_text:(el.textContent||'').trim()})})});
+document.querySelectorAll('.realestate-link').forEach(function(el){el.addEventListener('click',function(){track('city_to_realestate_click',{destination_domain:'alamalroumrealestate.com',placement:el.getAttribute('data-placement')||'unknown',campaign:'city_to_realestate'})})});
+document.querySelectorAll('.official-source').forEach(function(el){el.addEventListener('click',function(){track('official_source_click',{source_name:el.getAttribute('data-source')||'official_source',destination_url:el.href})})});
+document.querySelectorAll('details').forEach(function(item){item.addEventListener('toggle',function(){if(item.open){var summary=item.querySelector('summary');track('faq_open',{question:summary?summary.textContent.trim():''})}})});
+var seen={};if('IntersectionObserver'in window){var observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(!entry.isIntersecting)return;var name=entry.target.getAttribute('data-section');if(!name||seen[name])return;seen[name]=true;track('section_view',{section_name:name})})},{threshold:.35});document.querySelectorAll('[data-section]').forEach(function(section){observer.observe(section)})}
+var scrollSeen={};function trackScroll(){var doc=document.documentElement,max=doc.scrollHeight-window.innerHeight;if(max<=0)return;var pct=Math.round((window.scrollY/max)*100);[25,50,75,90].forEach(function(mark){if(pct>=mark&&!scrollSeen[mark]){scrollSeen[mark]=true;track('scroll_depth',{percent:mark})}})}window.addEventListener('scroll',trackScroll,{passive:true});
+})();
+</script>
 </body>
 </html>
